@@ -1,0 +1,53 @@
+<!DOCTYPE html> <html lang="en"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Form</title> </head> <body> 
+ 
+<h2> How can we help?</h2>
+<hr>
+<fieldset> <legend>Request for proposal </legend>
+<table>
+    <tr>  <td>Your Company:</td><td> <input type="text" id="yc" > </td> </tr>
+<tr> <label> <td>Email:</td><td> <input type="text" id="email" ></label> </td> </tr>
+<tr> <label> <td>Username:</td><td> <input type="text" id="um"></label> </td> </tr>
+<tr> <label> <td>Password: </td><td><input type="password" id="pass" ></label> </td> </tr>
+<tr> <td valign="top"> Your Business:</td><td> <textarea readonly> wala to </textarea>  </td> </tr>
+<tr>
+    <label>
+        <td valign="top"> Company Size:</td>
+    </label>
+ 
+    <td> <input type="radio" name="tru" > Less than 10 
+    <br>
+     <input type="radio" name="tru"> 11 to 50 
+    <br>
+     <input type="radio" name="tru"> 50 to 200 
+    <br>
+    <input type="radio" name="tru"> over 200 </td>
+    <br>
+</tr>
+<tr>
+    <label>
+        <td> Services: </td>
+    </label>
+     <td> <input type="checkbox" > Brand Identity
+        <input type="checkbox" > New Website
+        <input type="checkbox" > Web Redesign </td>
+</tr>
+ 
+<tr>
+    <label>
+        <td>Timeline: </td>
+    </label>
+ 
+    <td ><select name="tl"><option>Immediately</option>
+    <option>1-2 weeks</option>
+    <option>3-6 weeks</option>
+    <option>7-12 months</option>
+    </select></td>
+</tr>
+<tr>
+    <label>
+        <td align="center" colspan="2"><button>send to dev/design</button></td>
+    </label>
+</tr>
+</fieldset>
+</table>
