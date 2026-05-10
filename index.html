@@ -744,4 +744,12 @@
         if (!el) return;
         const r = el.getBoundingClientRect();
         if (r.top <= 80 && r.bottom > 80) {
-          document.querySelector
+          document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
+          const activeLink = document.querySelector(`.nav-links a[href="#${id}"]`);
+          if (activeLink) activeLink.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
