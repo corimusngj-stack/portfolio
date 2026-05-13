@@ -1,0 +1,105 @@
+Hastebin
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Using CSS Positions</title>
+
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      height: 3000px;
+    }
+
+    #button {
+      height: 50px;
+      width: 50px;
+      border-radius: 25px;
+      background-color: black;
+      color: white;
+      font-size: large;
+      margin-left: 1275px;
+      position: absolute;
+    }
+
+    #box {
+      width: 320px;
+      height: 180px;
+      border: none;
+      background-color: rgb(85, 80, 80);
+      position: fixed;
+      margin-left: 1000px;
+      margin-top: 420px;
+    }
+
+    img {
+      position: relative;
+      height: 270px;
+      width: 200px;
+    }
+
+    .off {
+      position: absolute;
+      top: 3px;
+      left: 135px;
+      display: inline-block;
+      border: none;
+      background-color: black;
+      color: white;
+      height: 20px;
+      width: 70px;
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .atc-container {
+      position: absolute;
+      top: 190px;
+      left: 0px;
+      background-color: #ffffff;
+      height: 85px;
+      width: 200px;
+    }
+
+    .atc {
+      position: relative;
+      top: 30px;
+      left: 55px;
+      border: 1px solid black;
+      background-color: white;
+      height: 25px;
+      width: 80px;
+      font-size: 10px;
+      cursor: pointer;
+    }
+
+    .atc:hover {
+      color: gray;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>
+    <button id="button">X</button>
+  </div>
+
+  <div id="box"></div>
+
+  <div id="main-container">
+    <div class="cloth">
+      <img src="https://freepngimg.com/thumb/tshirt/20-t-shirt-png-image.png">
+      <div class="off">20% OFF</div>
+
+      <div class="atc-container">
+        <button class="atc">Add to Cart</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
+
+
